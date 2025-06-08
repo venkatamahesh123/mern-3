@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Blogs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadBlogs()">
+  <nav>
+    <div>BlogsApp</div>
+    <div>
+      <a href="blogs.html">ALL BLOGS</a>
+      <a href="#" onclick="filterMyBlogs()">MY BLOGS</a>
+      <a href="add-blog.html">ADD BLOG</a>
+      <button onclick="logout()">LOGOUT</button>
+    </div>
+  </nav>
+
+  <div id="blogsContainer" class="blog-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

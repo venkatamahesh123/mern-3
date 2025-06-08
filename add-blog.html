@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div>BlogsApp</div>
+    <div>
+      <a href="blogs.html">ALL BLOGS</a>
+      <a href="#" onclick="filterMyBlogs()">MY BLOGS</a>
+      <a href="add-blog.html">ADD BLOG</a>
+      <button onclick="logout()">LOGOUT</button>
+    </div>
+  </nav>
+
+  <div class="form-box">
+    <h2>Post Your Blog</h2>
+    <input type="text" id="title" placeholder="Title" />
+    <textarea id="desc" placeholder="Description"></textarea>
+    <input type="text" id="image" placeholder="Image URL" />
+    <button onclick="addBlog()">SUBMIT</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
